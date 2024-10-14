@@ -1,0 +1,287 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&family=Lora:ital,wght@0,400..700;1,400..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --black:#000;
+    --white:#ffffff;
+    --font:"Lora", serif;
+    --font-2:"Afacad Flux", sans-serif;
+    --box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    width: 100%;
+    height: 100%;
+}
+
+section{
+    font-family: var(--font);
+}
+
+.header{
+    height: 120px;
+}
+
+.login-menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.login-menu a {
+    text-decoration: none !important;
+    color: var(--black);
+    font-size: 20px;
+    font-family: var(--font);
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+}
+
+.login-menu i {
+    font-size: 30px;
+}
+
+.login-menu a:hover {
+    color: var(--black);
+}
+
+
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo img{
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.navbars{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    border-top: 0.5px solid var(--black);
+    border-bottom: 0.5px solid var(--black);
+}
+
+.navbars .menu ul{
+    font-family: var(--font);
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    font-size: 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.menu a{
+    color: var(--black);
+    font-weight: 500;
+}
+
+.menu a:hover{
+    color: var(--black);
+}
+
+.home-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 50px 0;
+    font-family: var(--font);
+}
+
+.home-image {
+    margin: -250px 0; /* Negative margin to pull it up */
+    position: relative; /* Allows for absolute positioning of child elements */
+    z-index: 1; /* Ensure it overlaps the top section */
+}
+
+.home-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.home-container img {
+    max-width: 100%; /* Responsive image */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.homepage-top {
+    width: 100%;
+    height: 366px; /* Set height for top section */
+    background-color: var(--white);
+    position: relative; /* Allow child elements to overlap */
+    z-index: 0; /* Position behind the image */
+}
+
+.homepage-bottom {
+    display: flex; /* Enable flexbox */
+    flex-direction: column; /* Stack children vertically */
+    justify-content: flex-end; /* Align children to the bottom */
+    width: 100%;
+    height: 750px; /* Fixed height for the section */
+    background-color: var(--black);
+    padding: 50px 0; /* Padding for spacing */
+}
+
+.home-bottom {
+    margin-top: auto; /* Pushes this section to the bottom */
+    text-align: center; /* Center-align text */
+    font-family: var(--font);
+}
+
+.home-bottom h2 {
+    color: var(--white); /* Color for the title */
+    margin-bottom: 40px; /* Space below the title */
+}
+
+.home-bottom-yey {
+    color: var(--white);
+}
+
+.home-bottom-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 250px; /* Fixed width for titles */
+    margin: 20px auto; /* Center titles with auto margin */
+    text-align: center; /* Center text inside titles */
+}
+
+.home-bottom-title h3 {
+    font-size: 25px;
+    color: var(--white); /* Title color */
+    margin: 15px 0; /* Space between title and paragraph */
+}
+
+.home-bottom-title p {
+    text-align: center; /* Center paragraph text */
+    color: var(--white); /* Paragraph text color */
+}
+
+.footer-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 200px;
+    margin: 50px;
+    padding-left: 20rem;
+    padding-right: 20rem;
+}
+
+.follow-us-icon h4{
+    text-align: center;
+}
+
+.follow-us-icon ul{
+    display: flex;
+    list-style: none;
+    gap: 10px;
+    text-align: center;
+    font-size: 30px;
+}
+
+.follow-us-icon a{
+    color: var(--black);
+}
+.follow-us-icon a:hover{
+    color: var(--black);
+}
+
+.sample-menu-title{
+    margin: 50px;
+    margin-left: 100px;
+}
+
+.sample-menu-title h2{
+    font-size: 40px;
+}
+
+.sample-menu-cards{
+    background-color: var(--black);
+}
+
+.sample-menu-cards h5{
+    color: var(--white);
+    font-size: 30px;
+}
+
+.sample-menu-cards p{
+    color: var(--white);
+}
+
+.sample-menu-titles{
+    margin: 50px;
+    margin-left: 100px;
+    padding-top: 50px;
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px 10px 20px 10px;
+    font-family: var(--font-2);
+    background: none !important;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 5px;
+}
+
+.card img {
+    width: 100%;
+    height: 500px;
+    margin-bottom: 10px;
+}
+
+.card-body {
+    padding: 1.25rem;
+}
+
+.card-titles{
+    text-align: left;
+    color: var(--white);
+}
+
+.card-title {
+    font-weight: bold;
+    margin-bottom: 0.75rem;
+}
+
+.card-text {
+    margin-bottom: 0.5rem;
+}
+
+.card-body a{
+    color: #191715;
+}
+
+.card-body a:hover{
+    color: #191715;
+}
+
+
+
+
+
+
+
